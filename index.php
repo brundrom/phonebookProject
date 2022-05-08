@@ -10,6 +10,6 @@
         <input type="submit" value="Search"><br>
         </form>
         
-        <footer><center>The Phonebook Project | <?php include "version.php";?></center></footer>
+        <footer><center>The Phonebook Project | <?php include "version.php"?></center></footer>
     </body>
 </html>
