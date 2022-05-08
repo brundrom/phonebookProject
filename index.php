@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>The Phonebook Project</title>
+        <title>The Phonebook Project</title>    
     </head>
     <body>
         <nav>
