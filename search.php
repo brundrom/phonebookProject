@@ -1,4 +1,5 @@
 <?php
-    $username = $_GET['username'];
-    echo "Main page for $username platform<br>";
+    $accountName = $_GET['accountName'];
+    $accountPhone = $_GET['accountPhone'];
+    echo "Account with name $accountName has a $accountPhone number in contact list.<br>";
 ?>
