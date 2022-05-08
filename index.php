@@ -1,15 +1,16 @@
 <html>
     <head>
-        <title>Main page for platform</title>
+        <title>The Phonebook Project</title>
     </head>
     <body>
-    
-        <form method="GET" action="search.php">
-        <b>Name: </b><input name="accountName" type="text"><br>
-        <b>Phone: </b><input name="accountPhone" type="text"><br>
-        <input type="submit" value="Search"><br>
-        </form>
-        
+        <nav>
+            <ul>
+                <li><u>Contacts</u></li>
+                <li><a href="createNew.php">Create</li>
+                <li><a href="editList.php">Edit list</li>
+                <li><a href="search.php">Search</li>
+            </ul>
+        </nav>        
         <footer><center>The Phonebook Project | <?php include "version.php"?></center></footer>
     </body>
 </html>
