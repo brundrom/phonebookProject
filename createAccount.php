@@ -20,6 +20,8 @@
     $sql = "INSERT INTO contactlist (accountName, accountPhone, accountAddress) VALUES ('$accountName', '$accountPhone', '$accountAddress')";
 
     if ($connection->query($sql) === TRUE) {
+        echo 
+        
         echo "New record created successfully.";
     } else {
       echo "Error: " . $sql . "<br>" . $conn->error;
