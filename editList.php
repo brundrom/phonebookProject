@@ -1,19 +1,19 @@
 <html>
-    <head>
-        <title>The Phonebook Project</title>    
-    </head>
-    <body>
-        <!--MENU-->
-        <table>
+<head>
+    <title>Delete contact</title>
+</head>
+<body>
+     <!--MENU-->
+     <table>
             <tr>
-                <td>The Phonebook Project | </td>
+                <td><a href="index.php">The Phonebook Project | </a></td>
                 <td><a href="createNew.php">New | </a></td>
-                <td><a href="editList.php">Edit | </a></td>
+                <td>Edit | </td>
                 <td><a href="search.php">Search | </a></td>
                 <td><a href="https://github.com/brundrom/platformOne">Github</a></td>
             </tr>
-        </table>         
-        
+        </table>
+
         <!--DBLIST-->
         <center>
         <table>
@@ -36,7 +36,31 @@
             ?>
         </table>
         </center>
+        
+<center>
+<form method="GET" action="deleteAccount.php">
+    <table>
+        <tr>
+            <td colspan="2">Для удаления контакта требуется заполнить все поля</td>
+        </tr>
+        <tr>
+            <td><b>Name:</b></td>
+            <td><input name="accountName" type="text"><br></td>
+        </tr>
+        <tr>
+            <td><b>Phone:</b></td>
+            <td><input name="accountPhone" type="text"><br></td>
+        </tr>
+        <tr>
+            <td><b>Address:</b></td>
+            <td><input name="accountAddress" type="text"><br></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="submit" value="Delete"><br></td>
+        </tr>
+    </table>
+</form>
+</center>
 
-        <footer><center>The Phonebook Project | <?php include "version.php"?></center></footer>
-    </body>
+</body>
 </html>

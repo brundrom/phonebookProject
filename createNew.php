@@ -6,10 +6,11 @@
     <!--MENU-->
     <table>
             <tr>
-                <td>The Phonebook Project | </td>
-                <td><a href="createNew.php">New | </a></td>
+                <td><a href="index.php">The Phonebook Project | </a></td>
+                <td>New | </td>
                 <td><a href="editList.php">Edit | </a></td>
                 <td><a href="search.php">Search | </a></td>
+                <td><a href="https://github.com/brundrom/platformOne">Github</a></td>
             </tr>
         </table>  
     <center>
