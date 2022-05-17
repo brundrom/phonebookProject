@@ -23,16 +23,10 @@
                 <th>Address</th>
             </tr>
             <?php
-                $connection = mysqli_connect("sql303.liveblog365.com", "lblog_31693290", "54p3mik62y", "lblog_31693290_contactlist");
-                $sql = "SELECT * FROM contactlist";
-                $result = $connection->query($sql);
-                if ($result->num_rows > 0) {
-                    while ($row = $result->fetch_assoc()) {
-                        echo "<tr><td>" . $row["accountName"] . "</td><td>" . $row["accountPhone"] . "</td><td>" . $row["accountAddress"] . "</td></tr>";
-                    }
-                } else {
-                    echo "No contacts in phonebook<br>";
-                }
+
+            include('dbWorker.php');
+            showContactList();
+
             ?>
         </table>
         </center>
