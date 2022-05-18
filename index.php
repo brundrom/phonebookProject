@@ -25,7 +25,9 @@
             <?php
 
             include('dbWorker.php');
-            showContactList();
+            $dbTask = new dbWorker('mysql', 'root', 'secret', 'mydb');
+            $dbTask->dbOpen();
+            $dbTask->showAccounts();
 
             ?>
         </table>
