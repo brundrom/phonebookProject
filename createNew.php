@@ -14,7 +14,7 @@
             </tr>
         </table>  
     <center>
-<form method="POST" action="dbWorker.php">
+<form method="POST" action="task.php">
     <table>
         <tr>
             <td><b>Name:</b></td>
@@ -29,7 +29,7 @@
             <td><input name="accountAddress" type="text"><br></td>
         </tr>
         <tr>
-            <td colspan="2" align="center"><input type="button" name="creationJob" value="Create"><br></td>
+            <td colspan="2" align="center"><input type="submit" value="Create"><br></td>
         </tr>
     </table>
 </form>

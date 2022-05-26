@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>The Phonebook Project</title>    
+        <title>The Mainboard Project</title>    
     </head>
     <body>
         <!--MENU-->
@@ -24,9 +24,14 @@
             </tr>
             <?php
 
-            include('dbWorker.php');
-            $dbTask = new dbWorker('mysql', 'root', 'secret', 'mydb');
-            $dbTask->dbOpen();
+            // include('dbWorker.php');
+            // $dbTask = new dbWorker('mysql', 'root', 'secret', 'mydb');
+            // $dbTask->dbOpen();
+            // $dbTask->showAccounts();
+
+            include('dbworkus.php');
+            $dbTask = new dbWorkus('mysql', 'root', 'secret', 'mydb');
+            //$dbTask->dbOpen();
             $dbTask->showAccounts();
 
             ?>
