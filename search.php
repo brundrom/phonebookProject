@@ -15,7 +15,7 @@
         </table>
         
 <center>
-<form method="GET" action="task3.php">
+<form method="GET">
     <table>
         <tr>
             <td colspan="2">Ввести один из параметров для поиска по списку</td>
@@ -38,6 +38,12 @@
     </table>
 </form>
 </center>
+
+<?php
+            include('dbworkus.php');
+            $dbTask = new dbWorkus('mysql', 'root', 'secret', 'mydb');
+            $dbTask->searchAccount();
+?>
 
 </body>
 </html>

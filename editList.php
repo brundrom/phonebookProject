@@ -1,3 +1,9 @@
+<?php
+            include('dbworkus.php');
+            $dbTask = new dbWorkus('mysql', 'root', 'secret', 'mydb');
+            $dbTask->deleteAccount();
+?>
+
 <html>
 <head>
     <title>Delete contact</title>
@@ -23,15 +29,15 @@
                 <th>Address</th>
             </tr>
             <?php
-                include('dbworkus.php');
-                $dbTask = new dbWorkus('mysql', 'root', 'secret', 'mydb');
+                //include('dbworkus.php');
+                //$dbTask = new dbWorkus('mysql', 'root', 'secret', 'mydb');
                 $dbTask->showAccounts();
             ?>
         </table>
         </center>
         
 <center>
-<form method="POST" action="task2.php">
+<form method="POST">
     <table>
         <tr>
             <td colspan="2">Для удаления контакта требуется заполнить все поля</td>

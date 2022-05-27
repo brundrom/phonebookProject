@@ -1,3 +1,9 @@
+<?php
+            include('dbworkus.php');
+            $dbTask = new dbWorkus('mysql', 'root', 'secret', 'mydb');
+            $dbTask->createAccount();
+?>
+
 <html>
 <head>
     <title>Account creation</title>
@@ -14,7 +20,7 @@
             </tr>
         </table>  
     <center>
-<form method="POST" action="task.php">
+<form method="POST">
     <table>
         <tr>
             <td><b>Name:</b></td>
