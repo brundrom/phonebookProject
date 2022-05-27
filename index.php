@@ -23,17 +23,9 @@
                 <th>Address</th>
             </tr>
             <?php
-
-            // include('dbWorker.php');
-            // $dbTask = new dbWorker('mysql', 'root', 'secret', 'mydb');
-            // $dbTask->dbOpen();
-            // $dbTask->showAccounts();
-
-            include('dbworkus.php');
-            $dbTask = new dbWorkus('mysql', 'root', 'secret', 'mydb');
-            //$dbTask->dbOpen();
-            $dbTask->showAccounts();
-
+                include('dbworkus.php');
+                $dbTask = new dbWorkus('mysql', 'root', 'secret', 'mydb');
+                $dbTask->showAccounts();
             ?>
         </table>
         </center>

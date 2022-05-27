@@ -15,7 +15,7 @@
         </table>
         
 <center>
-<form method="GET" action="searchAccount.php">
+<form method="GET" action="task3.php">
     <table>
         <tr>
             <td colspan="2">Ввести один из параметров для поиска по списку</td>
